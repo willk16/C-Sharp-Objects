@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_Objects
 {
-    class Program
+    class Random
     {
-        static void Main(string[] args)
+        private static System.Random _random = new System.Random();
+
+        public static double NextDouble()
         {
+            return _random.NextDouble();
         }
     }
 }
